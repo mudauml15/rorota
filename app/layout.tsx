@@ -9,6 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Rorota Quality Solutions | Engineering Excellence',
   description: '100% Black-owned engineering company in South Africa. ISO certified welding, quality management, NDT services, and steel fabrication.',
+  metadataBase: new URL('https://rorota.vercel.app'),
   generator: 'v0.app',
   icons: {
     icon: [
