@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Target, Eye, Heart, Zap, Users, CheckCircle } from "lucide-react"
 
 const values = [
@@ -28,7 +29,19 @@ export function AboutSection() {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-          <div>
+          <div className="relative order-2 lg:order-1">
+            <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden">
+              <Image
+                src="/images/team.jpg"
+                alt="Rorota Quality Solutions Team"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-accent/20 rounded-lg -z-10" />
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/20 rounded-lg -z-10" />
+          </div>
+          <div className="order-1 lg:order-2">
             <div className="flex items-center gap-2 mb-4">
               <span className="h-px w-12 bg-accent" />
               <span className="text-accent font-medium text-sm tracking-wider uppercase">About Us</span>
@@ -58,7 +71,10 @@ export function AboutSection() {
               </div>
             </div>
           </div>
+        </div>
 
+        {/* Vision & Mission with Image */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div className="space-y-6">
             <div className="p-6 bg-card border border-border rounded-lg shadow-sm">
               <div className="flex items-center gap-4 mb-4">
@@ -86,6 +102,18 @@ export function AboutSection() {
                 their operations and outcomes.
               </p>
             </div>
+          </div>
+          
+          <div className="relative">
+            <div className="relative h-[400px] rounded-lg overflow-hidden">
+              <Image
+                src="/images/workshop.jpg"
+                alt="Rorota Quality Solutions Workshop"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-6 w-48 h-48 bg-primary/20 rounded-lg -z-10" />
           </div>
         </div>
 
