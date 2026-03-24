@@ -1,14 +1,20 @@
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Award, Users, Shield } from "lucide-react"
 
 export function HeroSection() {
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-primary pt-32 pb-20">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 border border-primary-foreground/20 rounded-full" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 border border-primary-foreground/20 rounded-full" />
-        <div className="absolute top-1/2 left-1/3 w-48 h-48 border border-primary-foreground/20 rounded-full" />
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero-welding.jpg"
+          alt="Rorota Quality Solutions - Industrial Welding"
+          fill
+          className="object-cover opacity-20"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/80" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
