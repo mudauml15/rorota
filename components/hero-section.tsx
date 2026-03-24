@@ -34,7 +34,7 @@ export function HeroSection() {
               Our Services
               <ArrowRight className="h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+            <Button size="lg" variant="outline" className="border-accent bg-accent/10 text-accent hover:bg-accent/20">
               Contact Us
             </Button>
           </div>
