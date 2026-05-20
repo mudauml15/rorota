@@ -43,7 +43,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-3">
             <div className="relative h-12 w-12">
               <Image
-                src="/images/portfolio/logo.jpg"
+                src="/images/logo.jpg"
                 alt="Rorota Quality Solutions Logo"
                 fill
                 className="object-contain"
