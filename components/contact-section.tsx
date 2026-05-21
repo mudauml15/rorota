@@ -31,11 +31,11 @@ const locations = [
   },
   {
     name: "Middleburg Branch",
-    address: "C)4A Beyers Naude Street, Middleburg, Mpumalanga 1050",
+    address: "4A Beyers Naude Street, Middleburg, Mpumalanga 1050",
   },
   {
     name: "Pretoria Branch",
-    address: "D)10753 Intambula Street, Nelmapius Ext 9, Pretoria, 0122",
+    address: "10753 Intambula Street, Nelmapius Ext 9, Pretoria, 0122",
   },
 ]
 
