@@ -20,8 +20,8 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm">
-      <div className="bg-accent text-accent-foreground py-2">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm">
+      <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4 flex flex-wrap justify-center md:justify-end gap-4 md:gap-6 text-sm">
           <a href="tel:+27115688298" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Phone className="h-3.5 w-3.5" />
@@ -50,8 +50,8 @@ export function Header() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold text-primary-foreground tracking-tight">ROROTA</span>
-              <span className="text-xs text-primary-foreground/70 tracking-wider">QUALITY SOLUTIONS</span>
+              <span className="text-2xl font-bold text-foreground tracking-tight">ROROTA</span>
+              <span className="text-xs text-foreground/70 tracking-wider">QUALITY SOLUTIONS</span>
             </div>
           </Link>
 
@@ -61,7 +61,7 @@ export function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-primary-foreground/80 hover:text-accent transition-colors text-sm font-medium"
+                className="text-foreground/80 hover:text-accent transition-colors text-sm font-medium"
               >
                 {item.name}
               </a>
@@ -74,7 +74,7 @@ export function Header() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="lg:hidden text-primary-foreground"
+            className="lg:hidden text-foreground"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -83,13 +83,13 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-primary-foreground/20 pt-4">
+          <div className="lg:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col gap-4">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-primary-foreground/80 hover:text-accent transition-colors font-medium"
+                  className="text-foreground/80 hover:text-accent transition-colors font-medium"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
