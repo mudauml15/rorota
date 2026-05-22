@@ -32,7 +32,7 @@ export function AboutSection() {
           <div className="relative order-2 lg:order-1">
             <div className="relative h-[400px] lg:h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/images/PHOTO-2026-05-20-10-52-42.jpg"
+                src="/images/Structural-0.jpg"
                 alt="Rorota Quality Solutions Team"
                 fill
                 className="object-cover"
@@ -107,7 +107,7 @@ export function AboutSection() {
           <div className="relative">
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/images/PHOTO-2026-05-20-10-52-43.jpg"
+                src="/images/Structural-1.jpg"
                 alt="Rorota Quality Solutions Workshop"
                 fill
                 className="object-cover"
